@@ -7,10 +7,3 @@ build/
 
 # Logs
 *.log
-
-# OS / editor files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp

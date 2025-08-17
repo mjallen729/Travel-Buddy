@@ -9,14 +9,5 @@ logs/
 *.log
 debug.log
 
-# OS junk
-.DS_Store
-Thumbs.db
-
-# Editor folders
-.vscode/
-.idea/
-*.swp
-
 # Other
 .env
