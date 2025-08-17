@@ -1,4 +1,3 @@
-// Routes/preferences.js
 import express from "express";
 import mongoose from "mongoose";
 import User from "../models/User.js";
@@ -75,7 +74,7 @@ router.post("/", async (req, res) => {
     const updatedUser = await User.findByIdAndUpdate(
       _id,
       { $set: update },
-      { new: true, upsert: true, runValidators: true },
+      { new: true, upsert: true, runValidators: true }
     );
 
     logger.info("✅ Preferences upserted", { userId: String(_id) });

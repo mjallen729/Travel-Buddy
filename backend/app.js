@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const app = express();
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3001;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,10 +22,10 @@ const frontendDir = path.join(__dirname, "../frontend");
 app.use(express.static(frontendDir));
 
 // Routes
-import tripRoutes from "./Routes/trips.js";
-import userRoutes from "./Routes/users.js";
-import collabRoutes from "./Routes/collaboration.js";
-import preferenceRoutes from "./Routes/preferences.js";
+import tripRoutes from "./routes/trips.js";
+import userRoutes from "./routes/users.js";
+import collabRoutes from "./routes/collaboration.js";
+import preferenceRoutes from "./routes/preferences.js";
 
 // Health check
 app.get("/api/ping", (_req, res) => {
@@ -48,7 +49,7 @@ app.use((req, res) => {
 });
 
 // Global error handler
-app.use((err, _req, res, _next) => {
+app.use((err, _req, res) => {
   logger.error("❌ Global error", { error: err.message, stack: err.stack });
   res.status(500).json({ error: "Internal server error" });
 });
@@ -56,5 +57,6 @@ app.use((err, _req, res, _next) => {
 // Start the server
 app.listen(PORT, () => {
   logger.info(`🚀 Backend listening on port ${PORT}`);
+  // eslint-disable-next-line no-undef
   logger.info(`📊 Environment: ${process.env.NODE_ENV || "development"}`);
 });
