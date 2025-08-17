@@ -1,0 +1,181 @@
+/* === Preferences Page Layout === */
+.preferences-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  min-height: 100vh;
+  background: #fefaf6;
+}
+
+/* === Card Container === */
+.preferences-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 480px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Make selects match rest of site */
+.preferences-card select {
+  background-color: #fefefe;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'%3E%3Cpath fill='%23666' d='M287 69.4l-14.2-14.3c-4.7-4.7-12.3-4.7-17 0L146.2 164.6 36.6 55c-4.7-4.7-12.3-4.7-17 0L5.4 69.4c-4.7 4.7-4.7 12.3 0 17l123 123c4.7 4.7 12.3 4.7 17 0l123-123c4.8-4.7 4.8-12.3.1-17z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+/* Checkbox spacing consistency */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Add focus styles */
+.preferences-card input[type="checkbox"]:focus,
+.preferences-card select:focus {
+  outline: 2px solid #264653;
+  outline-offset: 2px;
+}
+
+/* === Card Header === */
+.preferences-card h2 {
+  margin-bottom: 25px;
+  font-size: 1.9rem;
+  color: #264653;
+  text-align: center;
+}
+
+/* === Labels === */
+.preferences-card label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* === Select Inputs === */
+.preferences-card select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+/* === Checkbox Group === */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* === Button Style === */
+.auth-btn {
+  margin-top: 30px;
+  background-color: #264653;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.auth-btn:hover {
+  background-color: #1e3d4e;
+}
+
+/* === Success Message === */
+#successMsg {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #2e7d32;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 520px) {
+  .preferences-card {
+    padding: 30px 20px;
+    margin: 0 15px;
+  }
+
+  .preferences-card h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Navigation Component */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0 2px 20px var(--shadow);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}

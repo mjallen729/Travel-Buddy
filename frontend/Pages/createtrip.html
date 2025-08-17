@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a trip | Travel Buddy</title>
+    <meta
+      name="description"
+      content="Create a trip so you can start or expand your catalog of adventures!"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+    <link rel="stylesheet" href="../CSS/trip.css" />
+    <link rel="stylesheet" href="../CSS/auth.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Component -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-compass nav-icon"></i>
+          <span class="nav-title">Travel Buddy</span>
+        </div>
+
+        <div class="nav-menu">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./dashboard.html" class="nav-link active">Dashboard</a>
+          <a href="./dashboard.html#trips" class="nav-link">My Trips</a>
+          <a href="./dashboard.html#collaborations" class="nav-link"
+            >Collaborations</a
+          >
+          <a href="#" class="nav-link nav-cta" id="logout-btn">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+      <div class="trip-create-card">
+        <!-- Signup Form -->
+        <form class="trip-form" id="trip-form">
+          <div class="form-header">
+            <h2>Create A Trip</h2>
+            <p>Begin or expand your traveling catalog!</p>
+          </div>
+          <div class="form-group">
+            <label for="create-tripname">Trip Name</label>
+            <div class="input-wrapper">
+              <i class="fas fa-pencil-alt input-icon"></i>
+              <input
+                type="text"
+                id="create-tripname"
+                name="tripname"
+                required
+                placeholder="Trip name"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="create-destination">Destination</label>
+            <div class="input-wrapper">
+              <i class="fas fa-map-marker-alt input-icon"></i>
+              <input
+                type="text"
+                id="create-destination"
+                name="destination"
+                required
+                placeholder="Destination"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="create-start-date">Start Date</label>
+              <div class="input-wrapper-alt">
+                <input
+                  type="date"
+                  id="create-start-date"
+                  name="startdate"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="create-end-date">End Date</label>
+              <div class="input-wrapper-alt">
+                <input
+                  type="date"
+                  id="create-end-date"
+                  name="enddate"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="create-budget">Budget</label>
+              <div class="input-wrapper">
+                <i class="fas fa-dollar-sign input-icon"></i>
+                <input
+                  type="number"
+                  id="create-budget"
+                  name="budget"
+                  min="0"
+                  required
+                  placeholder="Budget"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="create-status">Status</label>
+              <div class="input-wrapper">
+                <i class="fas fa-calendar-alt input-icon"></i>
+                <select
+                  id="create-status"
+                  class="statusInput"
+                  name="status"
+                  required
+                >
+                  <option value="planning">Planning</option>
+                  <option value="upcoming">Upcoming</option>
+                  <option value="ongoing">Ongoing</option>
+                  <option value="completed">Completed</option>
+                  <option value="cancelled">Cancelled</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-header">
+            <p>Verify or modify your current trip preferences!</p>
+          </div>
+          <!-- Travel Preferences Questionnaire -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="create-travel-style">Travel Style </label>
+              <div class="input-wrapper">
+                <i class="fas fa-suitcase-rolling input-icon"></i>
+                <select
+                  id="create-travel-style"
+                  class="statusInput"
+                  name="travel-style"
+                  required
+                >
+                  <option value="balanced">Balanced</option>
+                  <option value="relaxed">Relaxed</option>
+                  <option value="fast-paced">Fast-paced</option>
+                  <option value="adventure">Adventure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="create-accommodation-style"
+                >Accommodation Style
+              </label>
+              <div class="input-wrapper">
+                <i class="fas fa-home input-icon"></i>
+                <select
+                  id="create-accommodation-style"
+                  class="statusInput"
+                  name="accommodation-style"
+                  required
+                >
+                  <option value="hotels">Hotels</option>
+                  <option value="hostels">Hostels</option>
+                  <option value="vacation-rentals">Vacation Rentals</option>
+                  <option value="eco-lodges">Eco-lodges</option>
+                  <option value="camping">Camping</option>
+                  <option value="luxury-resorts">Luxury Resorts</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="create-budget-range">Budget Range </label>
+            <div class="input-wrapper">
+              <i class="fas fa-dollar-sign input-icon"></i>
+              <select
+                id="create-budget-range"
+                class="statusInput"
+                name="budget-range"
+                required
+              >
+                <option value="mid-range">Mid-range</option>
+                <option value="budget">Budget</option>
+                <option value="luxury">Luxury</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Interests (select all that apply)</label>
+            <div class="checkbox-group" id="create-interests">
+              <label><input type="checkbox" value="food" /> Food</label>
+              <label><input type="checkbox" value="culture" /> Culture</label>
+              <label
+                ><input type="checkbox" value="adventure" /> Adventure</label
+              >
+              <label><input type="checkbox" value="nature" /> Nature</label>
+              <label
+                ><input type="checkbox" value="nightlife" /> Nightlife</label
+              >
+              <label><input type="checkbox" value="history" /> History</label>
+              <label><input type="checkbox" value="wellness" /> Wellness</label>
+              <label
+                ><input type="checkbox" value="photography" />
+                Photography</label
+              >
+              <label><input type="checkbox" value="shopping" /> Shopping</label>
+              <label><input type="checkbox" value="sports" /> Sports</label>
+              <label><input type="checkbox" value="art" /> Art</label>
+              <label><input type="checkbox" value="music" /> Music</label>
+              <label
+                ><input type="checkbox" value="architecture" />
+                Architecture</label
+              >
+              <label><input type="checkbox" value="beaches" /> Beaches</label>
+              <label
+                ><input type="checkbox" value="mountains" /> Mountains</label
+              >
+              <label><input type="checkbox" value="cities" /> Cities</label>
+              <label><input type="checkbox" value="rural" /> Rural</label>
+              <label><input type="checkbox" value="temples" /> Temples</label>
+              <label><input type="checkbox" value="museums" /> Museums</label>
+              <label
+                ><input type="checkbox" value="local-experiences" /> Local
+                Experiences</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="auth-btn">
+            <span>Create Trip</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="../JS/createtrip.js"></script>
+  </body>
+</html>

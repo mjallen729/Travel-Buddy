@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Preferences | Travel Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/preferences.css" />
+  </head>
+  <body>
+    <!-- MATCHING NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-compass nav-icon"></i>
+          <span>Travel Buddy</span>
+        </div>
+        <div class="nav-menu">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Features</a>
+          <a href="#" class="nav-link">Reviews</a>
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="preferences.html" class="nav-link">Preferences</a>
+          <a href="#" class="nav-link nav-cta">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TRAVEL PREFERENCES FORM -->
+    <main class="preferences-page">
+      <div class="preferences-card">
+        <h2>Travel Preferences</h2>
+        <form id="preferencesForm">
+          <label>Travel Style</label>
+          <select name="travelStyle" id="select-travel-style" required>
+            <option value="relaxed">Relaxed</option>
+            <option value="balanced">Balanced</option>
+            <option value="fast-paced">Fast-paced</option>
+          </select>
+
+          <label>Budget Range</label>
+          <select name="budgetRange" id="select-budget-range" required>
+            <option value="budget">Budget</option>
+            <option value="mid-range">Mid-range</option>
+            <option value="luxury">Luxury</option>
+          </select>
+
+          <label>Accommodation Style</label>
+          <select
+            name="accommodationStyle"
+            id="select-accommodation-style"
+            required
+          >
+            <option value="hotels">Hotels</option>
+            <option value="hostels">Hostels</option>
+            <option value="vacation-rentals">Vacation Rentals</option>
+            <option value="eco-lodges">Eco-lodges</option>
+          </select>
+
+          <label>Interests</label>
+          <div class="checkbox-group" id="select-interests">
+            <label><input type="checkbox" value="food" /> Food</label>
+            <label><input type="checkbox" value="culture" /> Culture</label>
+            <label><input type="checkbox" value="adventure" /> Adventure</label>
+            <label><input type="checkbox" value="nature" /> Nature</label>
+            <label><input type="checkbox" value="nightlife" /> Nightlife</label>
+            <label><input type="checkbox" value="history" /> History</label>
+            <label><input type="checkbox" value="wellness" /> Wellness</label>
+            <label
+              ><input type="checkbox" value="photography" /> Photography</label
+            >
+            <label><input type="checkbox" value="shopping" /> Shopping</label>
+            <label><input type="checkbox" value="sports" /> Sports</label>
+            <label><input type="checkbox" value="art" /> Art</label>
+            <label><input type="checkbox" value="music" /> Music</label>
+            <label
+              ><input type="checkbox" value="architecture" />
+              Architecture</label
+            >
+            <label><input type="checkbox" value="beaches" /> Beaches</label>
+            <label><input type="checkbox" value="mountains" /> Mountains</label>
+            <label><input type="checkbox" value="cities" /> Cities</label>
+            <label><input type="checkbox" value="rural" /> Rural</label>
+            <label><input type="checkbox" value="temples" /> Temples</label>
+            <label><input type="checkbox" value="museums" /> Museums</label>
+            <label
+              ><input type="checkbox" value="local-experiences" /> Local
+              Experiences</label
+            >
+          </div>
+
+          <button type="submit" class="auth-btn">Save Preferences</button>
+        </form>
+        <p id="successMsg" style="display: none">Preferences saved!</p>
+      </div>
+    </main>
+
+    <script type="module" src="../JS/preferences.js"></script>
+  </body>
+</html>

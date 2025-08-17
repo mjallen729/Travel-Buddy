@@ -1,0 +1,9 @@
+{
+  "_id": "abc123collab",
+  "tripId": "665a3001d76d6e8f9c8b5678",
+  "invitedUserId": "665a213bd76d6e8f9c8b1234",
+  "invitedBy": "88ab8b8b8b8b8b8b8b",
+  "role": "editor",
+  "status": "accepted",
+  "createdAt": "2025-06-24T15:00:00Z"
+}

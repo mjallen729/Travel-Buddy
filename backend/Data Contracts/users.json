@@ -1,0 +1,15 @@
+{
+  "_id": "665a213bd76d6e8f9c8b1234",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "jdoe@example.com",
+  "username": "jdoe",
+  "age": 21,
+  "hashedPassword": "$2a$10$UWhLm6mFz0qO2a6pQTyxieZ2RnkjklfdQMe9oFgG",
+  "travelPreferences": {
+    "budgetRange": "mid",
+    "travelStyle": "adventure",
+    "interests": ["hiking", "photography", "local food"]
+  },
+  "createdAt": "2025-06-20T18:00:00Z"
+}

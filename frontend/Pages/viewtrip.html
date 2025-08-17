@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="trip-title"></title>
+    <meta
+      name="description"
+      content="Create a trip so you can start or expand your catalog of adventures!"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+    <link rel="stylesheet" href="../CSS/trip.css" />
+    <link rel="stylesheet" href="../CSS/auth.css" />
+  </head>
+  <body>
+    <!-- Navigation Component -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-compass nav-icon"></i>
+          <span class="nav-title">Travel Buddy</span>
+        </div>
+
+        <div class="nav-menu">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./dashboard.html" class="nav-link active">Dashboard</a>
+          <a href="./dashboard.html#trips" class="nav-link">My Trips</a>
+          <a href="./dashboard.html#collaborations" class="nav-link"
+            >Collaborations</a
+          >
+          <a href="#" class="nav-link nav-cta" id="logout-btn">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <div class="auth-container">
+      <div class="trip-create-card">
+        <h1 id="trip-name"></h1>
+        <p>Destination:</p>
+        <p id="trip-destination"></p>
+        <p>Start Date:</p>
+        <p id="trip-start-date"></p>
+        <p>End Date:</p>
+        <p id="trip-end-date"></p>
+        <p>Budget:</p>
+        <p id="trip-budget"></p>
+        <p>Budget Range:</p>
+        <p id="trip-budget-range"></p>
+        <p>Travel Style:</p>
+        <p id="trip-travel-style"></p>
+        <p>Accommodation Style:</p>
+        <p id="trip-accommodation-style"></p>
+        <p>Interests:</p>
+        <p id="trip-interests"></p>
+        <p>Status:</p>
+        <p id="trip-status"></p>
+        <p>Last Updated:</p>
+        <p id="last-updated"></p>
+        <p>Created:</p>
+        <p id="created-on"></p>
+        <br />
+
+        <button id="edit" class="auth-btn">
+          <span>Edit Trip</span>
+          <i class="fas fa-edit"></i>
+        </button>
+
+        <button id="return" class="auth-btn">
+          <i class="fas fa-arrow-left"></i>
+          <span>Return to My Trips</span>
+        </button>
+
+        <button id="generate-ai-content" class="auth-btn">
+          <i class="fas fa-robot"></i>
+          <span>Generate AI Content</span>
+        </button>
+
+        <div id="ai-content"></div>
+      </div>
+    </div>
+
+    <script type="module" src="../JS/viewtrip.js"></script>
+  </body>
+</html>

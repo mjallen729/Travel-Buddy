@@ -1,0 +1,79 @@
+{
+  "_id": "665a3001d76d6e8f9c8b5678",
+  "userId": "665a213bd76d6e8f9c8b1234",
+  "tripName": "Japan Summer Adventure",
+  "destination": "Kyoto, Japan",
+  "startDate": "2025-07-10",
+  "endDate": "2025-07-18",
+  "budget": 2500,
+  "status": "upcoming",
+  "preferences": {
+    "travelStyle": "slow-paced",
+    "interests": ["temples", "nature", "local food"]
+  },
+  "travelInfo": {
+    "flights": [
+      {
+        "airline": "ANA",
+        "flightNumber": "NH 105",
+        "departureAirport": "JFK",
+        "arrivalAirport": "KIX",
+        "departureTime": "2025-07-09T22:30:00Z",
+        "arrivalTime": "2025-07-10T14:10:00Z"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Kyoto Granbell Hotel",
+        "address": "27 Yamatocho, Higashiyama Ward, Kyoto",
+        "checkIn": "2025-07-10T15:00:00Z",
+        "checkOut": "2025-07-18T11:00:00Z"
+      }
+    ],
+    "trains": [
+      {
+        "departureStation": "Kyoto",
+        "arrivalStation": "Osaka",
+        "departureTime": "2025-07-14T09:00:00Z",
+        "arrivalTime": "2025-07-14T10:00:00Z"
+      }
+    ]
+  },
+  "activities": [
+    {
+      "day": 1,
+      "date": "2025-07-10",
+      "items": [
+        {
+          "time": "15:00",
+          "title": "Check in at hotel",
+          "type": "logistics"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner at Nishiki Market",
+          "type": "food"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-07-11",
+      "items": [
+        {
+          "time": "09:00",
+          "title": "Fushimi Inari Shrine",
+          "type": "sightseeing"
+        },
+        {
+          "time": "14:00",
+          "title": "Kyoto Tea Ceremony",
+          "type": "cultural"
+        }
+      ]
+    }
+  ],
+  "notes": "Add bike rental for Day 3",
+  "createdAt": "2025-06-21T14:25:00Z",
+  "updatedAt": "2025-06-22T10:05:00Z"
+}
