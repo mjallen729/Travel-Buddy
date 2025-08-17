@@ -1,11 +1,7 @@
-#!/usr/bin/env ruby
+#!/bin/sh
 
-# Cool option parser bro :o
-
-if ARGV[0] == 'start'
-  exec 'cd backend && npm start'
-
-elsif ARGV[0] == 'dev'
-  exec 'cd backend && npm run dev'
-
-end
+if [ "$1" = "start" ]; then
+  cd backend && npm start
+elif [ "$1" = "dev" ]; then
+  cd backend && npm run dev
+fi
