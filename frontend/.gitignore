@@ -1,6 +1,3 @@
-# Node modules
-node_modules/
-
 # Build output (if you ever add a bundler)
 dist/
 build/

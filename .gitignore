@@ -2,6 +2,9 @@
 .DS_Store
 Thumbs.db
 
+# JS Stuff
+node_modules/
+
 # Editor folders
 .vscode/
 .idea/
