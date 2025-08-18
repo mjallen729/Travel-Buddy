@@ -4,11 +4,11 @@ This document provides a quick overview of the backend API endpoints, their HTTP
 
 ---
 
-### 1. Health Check
+## 1. Health Check
 
 *   `GET /api/ping`: Check if the backend server is operational.
 
-### 2. Trips API (`/api/trips`)
+## 2. Trips API (`/api/trips`)
 
 #### 2.1. Trip Management
 
@@ -29,7 +29,7 @@ This document provides a quick overview of the backend API endpoints, their HTTP
 *   `POST /api/trips/:tripId/generate-recommendations`: Request the generation of AI-powered recommendations for a specified trip.
 *   `POST /api/trips/:tripId/generate-tips`: Request the generation of AI-powered travel tips for a specified trip.
 
-### 3. Users API (`/api/users`)
+## 3. Users API (`/api/users`)
 
 #### 3.1. User Management
 
@@ -42,7 +42,7 @@ This document provides a quick overview of the backend API endpoints, their HTTP
 *   `POST /api/users/login`: Authenticate a user and establish a session.
 *   `POST /api/users/signup`: Register a new user account.
 
-### 4. Collaboration API (`/api/collaboration`)
+## 4. Collaboration API (`/api/collaboration`)
 
 #### 4.1. Collaboration Management
 
@@ -62,7 +62,7 @@ This document provides a quick overview of the backend API endpoints, their HTTP
 
 *   `GET /api/collaboration/stats/:userId`: Get statistical data related to a user's collaborations.
 
-### 5. Preferences API (`/api/preferences`)
+## 5. Preferences API (`/api/preferences`)
 
 #### 5.1. User Preferences
 
