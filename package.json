@@ -1,13 +1,10 @@
 {
-  "name": "travel-buddy-frontend",
+  "name": "travel-buddy",
   "version": "1.0.0",
-  "description": "This is the frontend for the Travel Buddy app. Built with vanilla HTML, CSS, and JavaScript.",
+  "description": "Travel app",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "npx live-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjallen729/Travel-Buddy.git"
@@ -19,7 +16,11 @@
     "url": "https://github.com/mjallen729/Travel-Buddy/issues"
   },
   "homepage": "https://github.com/mjallen729/Travel-Buddy#readme",
+  "dependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.33.0"
+  },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "prettier": "3.6.2"
   }
 }
